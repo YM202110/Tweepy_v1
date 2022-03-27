@@ -1,0 +1,11 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    <div>
+        {{ form.keyword.label_tag }}
+        {{ form.keyword }}    
+    </div>
+    <br>
+    <input type="submit" value="キーワードを登録する">
+    <a href="{% url 'gettweet' %}">ツイート取得</a>
+    <a href="{% url 'index' %}">トップページ</a>
+</form>

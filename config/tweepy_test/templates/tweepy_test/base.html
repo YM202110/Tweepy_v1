@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS ホームページの「はじめに」からコピペ-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+            <a class="navbar-brand px-4 align-items-center" href="{% url 'index' %}">Tweepy β</a>
+        </nav>
+
+    </head>
+    <body style="padding-top:50px">
+        <div class="container mt-3">
+            <div class="w-77 mx-auto">
+                <div class="shadow-sm align-items-center p-1 bg-white rounded">
+                    {% block header %}
+                    {% endblock header %}
+                </div>
+            </div>
+                {% block content %}
+                {% endblock content %}
+        </div>
+        <!-- Bootstrap CSS ホームページの「はじめに」からコピペ-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

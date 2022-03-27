@@ -1,0 +1,6 @@
+<form action="" method="POST">
+    {% csrf_token %}
+    <div>キーワード：{{ form.keyword }}</div>
+    <input type="submit" value="データ取得する">
+    <a href="{% url 'register' %}">キーワード登録</a>
+</form>
